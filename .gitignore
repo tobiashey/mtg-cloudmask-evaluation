@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Rohdaten und Datenbanken gehoeren nicht in dieses Repository.
+*.db
+*.db-journal
+*.nc
+*.zip
+*.jpg
+*.jpeg
+
+# Umgebung und Zugangsdaten
+.env

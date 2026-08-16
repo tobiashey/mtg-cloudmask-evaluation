@@ -1,0 +1,26 @@
+C3 — Deskriptive Statistik (Complete-Case, N = 2646 Slots, 34 Tage)
+Skript: c3_deskriptiv.py | Grundlage: out/paired_slots.csv (C2)
+
+               source    n  mean   sd  median  p25  p75  share_0_12.5  share_87.5_100  n_distinct
+Camera (ground truth) 2646  38.7 39.8    23.8  0.5 81.2          44.3            22.3        2043
+       MTG FCI L2 CLM 2646  44.8 42.7    34.7  0.0 95.8          40.4            31.0          73
+     Bright Sky (DWD) 2646  41.8 41.8    25.0  0.0 88.0          41.2            31.0           9
+           Open-Meteo 2646  45.6 40.2    44.0  0.0 89.0          36.0            26.0         101
+       OpenWeatherMap 2646  40.7 37.6    30.0  4.0 80.0          36.7            20.2          93
+          Tomorrow.io 2646  36.1 35.4    26.7  0.8 66.4          38.2            14.9         613
+       WeatherAPI.com 2646  12.3 21.4     0.0  0.0 22.0          70.6             0.4          60
+
+Wetterlagen-Anteile (Slot-Ebene, Kamera-Bodenwahrheit):
+camera
+clear (<12.5%)         44.3
+broken (12.5-87.5%)    33.4
+overcast (>87.5%)      22.3
+
+Tagescharakter (Tagesmittel Kamera):
+camera
+mostly clear day (<25%)       12
+mixed day (25-75%)            19
+mostly overcast day (>75%)     3
+
+Hinweis Quantisierung: n_distinct zeigt die Wertevielfalt je Quelle
+(Bright Sky liefert okta-quantisierte Prozentwerte, vgl. [E2]).

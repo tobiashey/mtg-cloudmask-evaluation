@@ -1,0 +1,6 @@
+,MTG FCI L2 CLM,MTG FCI L2 CLM,MTG FCI L2 CLM,Bright Sky (DWD),Bright Sky (DWD),Bright Sky (DWD),Open-Meteo,Open-Meteo,Open-Meteo,OpenWeatherMap,OpenWeatherMap,OpenWeatherMap,Tomorrow.io,Tomorrow.io,Tomorrow.io,WeatherAPI.com,WeatherAPI.com,WeatherAPI.com
+,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias
+grp,,,,,,,,,,,,,,,,,,
+low sun (5-15°),400,16.07,-7.19,400,22.07,1.59,400,22.48,-0.49,400,28.44,-6.26,400,23.03,-11.77,400,40.87,-36.36
+mid sun (15-30°),569,10.0,1.14,569,16.35,4.08,569,18.2,3.91,569,23.43,-0.84,569,18.82,-6.8,569,33.96,-28.35
+high sun (>=30°),1677,13.98,11.04,1677,18.48,3.15,1677,18.15,9.78,1677,23.25,5.01,1677,19.34,1.13,1677,29.82,-23.31

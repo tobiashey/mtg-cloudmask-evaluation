@@ -1,0 +1,8 @@
+source,n_slots_excluded,n_slot_pairs,n_changes,pct_changed,eff_interval_min
+camera,99,2664,2296,86.2,11.6
+satellite_clm,42,2745,1330,48.5,20.6
+weather_brightsky,15,2802,405,14.5,69.2
+weather_openmeteo,45,2729,1128,41.3,24.2
+weather_openweathermap,0,2818,410,14.5,68.7
+weather_tomorrowio,8,2802,1055,37.7,26.6
+weather_weatherapi,0,2818,378,13.4,74.6

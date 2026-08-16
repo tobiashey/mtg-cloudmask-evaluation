@@ -1,0 +1,11 @@
+F1 — Latenz Satellitenkette, NUR Live-Betrieb [E4] (f1_latenz.py)
+Szenen gesamt in DB: 5251; davon Live (ts <= 2026-07-25T20:00:00+00:00, Latenz < 6 h): 3827
+
+latenz_sensing = created_at - sensing_end (Verfuegbarkeit nach Scan-Ende):
+  N=3827  Median=10.1  Mittel=10.1  P5=10.1  P95=10.2  Max=20.1  (Minuten)
+
+latenz_slot = created_at - ts (Wertalter ab Slot-Beginn; Scan dauert 10 min):
+  N=3827  Median=20.1  Mittel=20.1  P5=20.1  P95=20.2  Max=30.1  (Minuten)
+
+Anteil Szenen mit latenz_sensing <= 10 min: 0.0 %
+Anteil Szenen mit latenz_sensing <= 15 min: 100.0 %

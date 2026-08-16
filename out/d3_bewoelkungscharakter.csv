@@ -1,0 +1,6 @@
+,MTG FCI L2 CLM,MTG FCI L2 CLM,MTG FCI L2 CLM,Bright Sky (DWD),Bright Sky (DWD),Bright Sky (DWD),Open-Meteo,Open-Meteo,Open-Meteo,OpenWeatherMap,OpenWeatherMap,OpenWeatherMap,Tomorrow.io,Tomorrow.io,Tomorrow.io,WeatherAPI.com,WeatherAPI.com,WeatherAPI.com
+,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias,N,MAE,Bias
+grp,,,,,,,,,,,,,,,,,,
+clear (<12.5%),1172,7.62,5.98,1172,12.3,10.44,1172,15.9,14.22,1172,17.23,16.27,1172,11.12,9.79,1172,5.63,2.88
+broken (12.5-87.5%),883,27.62,11.63,883,30.53,3.27,883,28.58,7.8,883,31.67,1.78,883,26.64,-2.97,883,38.01,-31.29
+overcast (>87.5%),591,3.8,-1.67,591,13.11,-11.66,591,10.0,-8.68,591,26.3,-25.74,591,26.74,-26.28,591,77.01,-77.01

@@ -1,0 +1,23 @@
+C2 — Paired-Slot-Datensatz: N-Bilanz und Ausschlüsse [E5]
+Erstellt: 2026-08-05 | DB: cloudhub_analysis.db (read-only) | Skript: c2_paired_slots.py
+
+Kampagnenfenster [E4]:      2026-07-02T13:50:00+00:00 .. letzter Slot 2026-08-04T23:50:00+00:00
+Slot-Raster gesamt:         4813
+davon Tagfenster (Sonnenelevation >= 5.0°) [E5a]: 2852
+
+Ausschluss-Kaskade im Tagfenster (jeder Slot zählt beim ersten verletzten Kriterium):
+  Kamerabild ungültig [E5c]:            54
+  Kamerawert fehlt (kein Bild/NULL):    45
+  satellite_clm fehlt:             41
+  weather_brightsky fehlt:         15
+  weather_openmeteo fehlt:         43
+  weather_openweathermap fehlt:    0
+  weather_tomorrowio fehlt:        8
+  weather_weatherapi fehlt:        0
+
+=> Complete-Case-Slots (FF1/FF2-Hauptdatensatz) [E5b]: 2646
+   auf 34 Kalendertagen (2026-07-02 .. 2026-08-04)
+
+Hinweis: Complete-Case erzwingt identisches N für alle Quellenvergleiche;
+Slots mit nur teilweiser Quellenabdeckung stehen mit Flags in paired_slots.csv
+und gehen in die Ausfallanalyse F4 ein, nicht in FF1/FF2.

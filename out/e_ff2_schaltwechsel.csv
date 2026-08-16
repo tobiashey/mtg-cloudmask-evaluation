@@ -1,0 +1,22 @@
+aggregation,source,wechsel_pro_tag
+10 min,Kamera-Referenz,2.24
+10 min,MTG FCI L2 CLM,2.0
+10 min,Bright Sky (DWD),1.41
+10 min,Open-Meteo,1.06
+10 min,OpenWeatherMap,0.5
+10 min,Tomorrow.io,1.0
+10 min,WeatherAPI.com,0.88
+30 min,Kamera-Referenz,0.91
+30 min,MTG FCI L2 CLM,0.79
+30 min,Bright Sky (DWD),0.97
+30 min,Open-Meteo,0.85
+30 min,OpenWeatherMap,0.29
+30 min,Tomorrow.io,0.76
+30 min,WeatherAPI.com,0.5
+60 min,Kamera-Referenz,0.5
+60 min,MTG FCI L2 CLM,0.38
+60 min,Bright Sky (DWD),0.59
+60 min,Open-Meteo,0.62
+60 min,OpenWeatherMap,0.09
+60 min,Tomorrow.io,0.5
+60 min,WeatherAPI.com,0.32

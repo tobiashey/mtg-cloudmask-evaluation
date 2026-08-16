@@ -1,0 +1,24 @@
+F2 (Vorab) — Empirische Wert-Änderungsintervalle (Tagfenster-Slots, lückenlose 10-min-Folgen)
+Skript: f2_update_intervalle.py | Grundlage: out/paired_slots.csv (C2)
+
+                source  n_slots_excluded  n_slot_pairs  n_changes  pct_changed  eff_interval_min
+                camera                99          2664       2296         86.2              11.6
+         satellite_clm                42          2745       1330         48.5              20.6
+     weather_brightsky                15          2802        405         14.5              69.2
+     weather_openmeteo                45          2729       1128         41.3              24.2
+weather_openweathermap                 0          2818        410         14.5              68.7
+    weather_tomorrowio                 8          2802       1055         37.7              26.6
+    weather_weatherapi                 0          2818        378         13.4              74.6
+
+Grundgesamtheit: 2852 Tagfenster-Slots (Sonnenelevation >= 5°).
+n_slots_excluded = Slots ohne gültige Messung (fehlender Abruf/NULL,
+bei der Kamera zusätzlich als ungültig markierte Bilder). Sie bilden kein Paar
+und erzeugen daher weder einen künstlichen Wechsel noch eine künstliche Konstanz.
+
+Lesart: pct_changed = Anteil Folge-Slots mit neuem Wert;
+eff_interval_min = 10 / (pct_changed/100) = mittlerer Abstand zwischen zwei neuen
+Werten. Das ist keine Abruflatenz: Eine Quelle, die ihren Wert fachlich zu Recht
+hält (z. B. 0 % bei wolkenlosem Himmel), liegt geringfügig über ihrem Abruftakt.
+
+Befund: Bright Sky, OpenWeatherMap und WeatherAPI.com liefern faktisch Stundenwerte
+(69-75 min), Kamera und MTG CLM aktualisieren im bzw. nahe am 10-min-Takt.

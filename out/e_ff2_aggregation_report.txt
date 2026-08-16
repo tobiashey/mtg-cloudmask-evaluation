@@ -1,0 +1,34 @@
+Phase E — Ergänzung: FF2 auf Aggregationsebenen (e_ff2_aggregation.py)
+Fenster-Logik identisch zu e_ff2_entscheidungen.py; Fenster > 50 % gefüllt.
+
+Konfusions-Kennzahlen je Ebene:
+aggregation           source   N  korrekt_beschattet_TP  korrekt_nicht_TN  unnoetig_beschattet_FP  verpasst_FN  accuracy  precision  recall
+     10 min   MTG FCI L2 CLM 992                    405               439                      32          116    0.8508     0.9268  0.7774
+     10 min Bright Sky (DWD) 992                    425               376                      95           96    0.8075     0.8173  0.8157
+     10 min       Open-Meteo 992                    396               420                      51          125    0.8226     0.8859  0.7601
+     10 min   OpenWeatherMap 992                    391               356                     115          130    0.7530     0.7727  0.7505
+     10 min      Tomorrow.io 992                    405               364                     107          116    0.7752     0.7910  0.7774
+     10 min   WeatherAPI.com 992                    489                72                     399           32    0.5655     0.5507  0.9386
+     30 min   MTG FCI L2 CLM 339                    140               156                       7           36    0.8732     0.9524  0.7955
+     30 min Bright Sky (DWD) 339                    144               135                      28           32    0.8230     0.8372  0.8182
+     30 min       Open-Meteo 339                    135               148                      15           41    0.8348     0.9000  0.7670
+     30 min   OpenWeatherMap 339                    134               125                      38           42    0.7640     0.7791  0.7614
+     30 min      Tomorrow.io 339                    138               132                      31           38    0.7965     0.8166  0.7841
+     30 min   WeatherAPI.com 339                    167                25                     138            9    0.5664     0.5475  0.9489
+     60 min   MTG FCI L2 CLM 175                     76                80                       3           16    0.8914     0.9620  0.8261
+     60 min Bright Sky (DWD) 175                     72                70                      13           20    0.8114     0.8471  0.7826
+     60 min       Open-Meteo 175                     71                72                      11           21    0.8171     0.8659  0.7717
+     60 min   OpenWeatherMap 175                     73                66                      17           19    0.7943     0.8111  0.7935
+     60 min      Tomorrow.io 175                     73                69                      14           19    0.8114     0.8391  0.7935
+     60 min   WeatherAPI.com 175                     86                13                      70            6    0.5657     0.5513  0.9348
+
+Entscheidungswechsel pro Tag (Schalthäufigkeit der Rollläden):
+aggregation       10 min  30 min  60 min
+source                                  
+Bright Sky (DWD)    1.41    0.97    0.59
+Kamera-Referenz     2.24    0.91    0.50
+MTG FCI L2 CLM      2.00    0.79    0.38
+Open-Meteo          1.06    0.85    0.62
+OpenWeatherMap      0.50    0.29    0.09
+Tomorrow.io         1.00    0.76    0.50
+WeatherAPI.com      0.88    0.50    0.32
